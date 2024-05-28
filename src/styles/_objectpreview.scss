@@ -1,0 +1,12 @@
+.previewcard {
+  border: 0;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  &__link {
+    border-radius: 0.5rem;
+    img {
+      height: auto;
+      border-radius: 0.5rem;
+    }
+  }
+}

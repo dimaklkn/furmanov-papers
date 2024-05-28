@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap");
+
+//loader
+$primary-color: hsl(233, 8%, 62%);
+@import "~loaders.css/src/animations/line-scale.scss";
+
+.loader-hidden {
+  display: none;
+}
+
+.loader-active {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+::-webkit-scrollbar {
+  width: 0.3em;
+  background-color: darkGray;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  filter: sepia(0.5) grayscale(0.3) brightness(0.8);
+}
+
+body {
+  background-color: $mainBG;
+  font-family: "Golos Text", sans-serif;
+  font-optical-sizing: auto;
+  color: $mainTypeCol;
+  font-weight: 400;
+  font-size: $font-small;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  mix-blend-mode: darken;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+// Utility styles
+button {
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.container {
+  max-width: 1016px;
+  margin: 0 auto;
+  padding: 0 0.5rem 0 0.5rem;
+}
+
+.grid-col-span-2 {
+  grid-column: span 2;
+}

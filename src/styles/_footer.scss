@@ -1,0 +1,11 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0 1rem 0;
+  &__attribution {
+    color: gray;
+    font-size: $font-small;
+  }
+}

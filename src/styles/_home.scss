@@ -1,0 +1,6 @@
+.home {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 8fr;
+  min-height: 100vh;
+}

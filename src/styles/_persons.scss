@@ -1,0 +1,8 @@
+.persons {
+  display: grid;
+  gap: 1rem;
+  &__spacer {
+    width: 100%;
+    height: 100%;
+  }
+}
