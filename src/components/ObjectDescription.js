@@ -6,7 +6,6 @@ const ObjectDescription = () => {
   const { picture, title, description } = useGlobalContext();
   return (
     <div className="objectdesc">
-      <img src={picture} alt={title} />
       <div className="objectdesc__text">
         <h3>{title}</h3>
         <p>{description}</p>
@@ -28,6 +27,7 @@ const ObjectDescription = () => {
           </button>
         </Link>
       </div>
+      <img src={picture} alt={title} />
     </div>
   );
 };
